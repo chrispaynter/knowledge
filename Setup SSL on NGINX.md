@@ -1,6 +1,8 @@
 # Generate SSL Certiciates on Linux
 
-Instructions to create SSL certificates using Let's Encrypt on Linux.
+Instructions to create SSL certificates for free on your Linux server using [Let's Encrypt](https://letsencrypt.org/).
+
+Note that Let's Encrypt certificates will expire after 90 days, see the very bottom of this for information about why.
 
 ## Step 1: Download Let's Encrypt
 Head to the opt folder. This is a folder on Linux that is used to store software that isn't part of the default installation.
@@ -84,6 +86,11 @@ Here are the one's that you will need, depending on the server software you are 
 - _fullchain.pem_ - server cert + intermediates
 
 
-## Conclusion
+## Done!
 You now have certificates for your domain and can move on to setting up your server. In the future I hope to link instructions for different server environments below.
 
+## Let's Encrypt 90 Day Expiry
+As mentioned above, the certificate will expire after 90 days. [There is some rationale behind this](https://community.letsencrypt.org/t/maximum-and-minimum-certificate-lifetimes/264/2):
+>At launch all certificates will have a lifetime of exactly 90 days. Post launch we will possibly offer more options, but they will likely be on the shorter side rather than the longer side. Part of the rationale for the 90 day number is that when certs are renewed only once a year, a lot can change. The person in charge might forget how to do it, or leave the organization, or change email addresses, etc. A shorter lifetime will hopefully encourage people to automate the renewal process, and we'll provide tools to help with that.
+
+That means that unless you want to repeat this process every 90 days, you'll need to automate this. There will be follow up instructions on this at some point in the future.
