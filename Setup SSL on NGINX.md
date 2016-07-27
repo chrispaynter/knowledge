@@ -1,8 +1,12 @@
 # Generate SSL Certiciates on Linux
 
+Instructions to create SSL certificates using Let's Encrypt on Linux.
+
 ## Step 1: Download Let's Encrypt
 Head to the opt folder. This is a folder on Linux that is used to store software that isn't part of the default installation.
 `cd /opt`
+
+Note if you are on mac you'll need to create the opt folder using `mkdir /opt`
 
 Clone down the lets encrypt repo from GitHub
 `git clone https://github.com/lukas2511/letsencrypt.sh`
