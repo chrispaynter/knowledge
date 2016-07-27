@@ -64,7 +64,9 @@ Note at this point, you may also get a message saying your java version is incom
 Once you have the installation running, when setting up the database, follow this screenshot:
 ![Team City Database Setup](/img/teamcity-db-setup.png?raw=true)
 
-You can also stop it by replacing start with stop:
+If you see the _Refresh JDBC drivers_ button press it, and then you should get a message saying the driver was found.
+
+**You can stop team city with this command**
 `/var/www/apps/teamcity/TeamCity/bin/runAll.sh stop`
 
 ## A Note on Java
