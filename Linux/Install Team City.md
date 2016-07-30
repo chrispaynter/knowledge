@@ -84,4 +84,7 @@ Note that the versions may be different depending on your server and the version
 `sudo yum remove java-1.7.0-openjdk`
 
 
+## MySQL Optimisation
+There are some optimisations that can be made to improve the performance of Team City running with MySQL. [Follow these instructions](https://confluence.jetbrains.com/display/TCD10/How+To...#HowTo...-ConfigureNewlyInstalledMySQLServer).
+
 
